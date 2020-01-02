@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+    <title>Home</title>
+
+    <meta charset="UTF-8">
+    <!-- links css to web page -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- header bar spans webpage, with div to contain content that sits within the 960px width in center -->
+    <header>
+        <div class="contentAreaHeader">
+            <div id="nameBox"><h1>Nicholas DeRissio</h1></div>
+            <!-- <h1>Nicholas DeRissio</h1> -->
+
+            <!-- buttons used for navigating the webpage -->
+            <ul>
+                <li><button id="about" class="nav" onclick="toAbout()">About</button></li>
+                <li><button id="contact" class="nav" onclick="toContact()">Contact</button></li>
+                <li><button id="portfolio" class="nav" onclick="toPortfolio()">Portfolio</button></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- main content area of page contains information or objects for user interactivity -->
+    <section class="contentArea">
+        <h2>About Me</h2>
+
+        <div class="linedevider"></div>
+
+        <img id="profilePic" src="assets/images/me.png" alt="a picture of nick">
+
+        <p class="mainText"> The first time I typed Hello World into a machine was the moment I realized how
+            <strong>POWERFUL</strong> computers are.
+            Yes, from that measly one line of System.out.println("Hello World!"). Technology has evolved tremendously in
+            my time on earth. I plan to evolve
+            with it, every step of the way. The limetless possibilities of computer programming will forever hold me in
+            awe.</p>
+        <br>
+        
+        <p class="mainText">Full-Stack Development can be the most frustrating, yet rewarding endevour. Nothing is more rewarding to me than making my ideas, and others' ideas, come to life.
+             From the mind, to the text editor, through the compiler then, to <strong>life</strong></p>
+    </section>
+
+    <!-- footer of web page 'sticky' -->
+    <footer>
+        <div id="footerText">Made By Nicholas DeRissio</div>
+    </footer>
+
+    <!-- links js to webpage -->
+    <script src="js/magic.js"></script>
+</body>
+
+</html>

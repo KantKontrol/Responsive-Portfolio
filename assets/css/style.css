@@ -1,0 +1,221 @@
+
+
+html, body {
+    height: 100%;
+}
+
+
+/*sets background image, gets rid of space on edges of screen, uses flex for the sticky footer*/
+body {
+    background-image: url('../images/prism.png');
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*sets color, pushes content up, adds border, sets the height or thickness as percieved, makes the bar relative to window*/
+header {
+    background-color: #1d1616;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4aaaa5; 
+    height: 50px;
+    position: relative;
+    z-index:0;
+}
+
+/*namebox is the box that adds a seperate color and allows for a border around the h1 tag where it is positioned, changed background to same image as actual page, it flows better*/
+#nameBox {
+    
+    width:310px;
+    height:45px;
+    background-image: url('../images/prism.png');
+    /* background-color: #1d1616; */
+    border-top: 2px solid #4aaaa5;
+    border-left: 2px solid #4aaaa5;
+    border-right: 2px solid #4aaaa5;
+    /*border-bottom: 2px solid #2c1d1d;*/
+    position: absolute;
+    bottom: -2px;
+    left: 100;
+    z-index: 1;
+}
+
+/*uses z-index to set infront of 'nameBox' positioned absolute so that is positioned with the header and so it can use z-index  --> replaced this by adding it inside the titleBox html*/
+h1 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+    margin-top: 6px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /*margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left;
+    position: absolute;
+    z-index: 2; */
+}
+
+
+/* sets up font and colors for headers */
+h2 {
+
+    margin-left: 50px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+}
+
+h3 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #4aaaa5;
+}
+
+p {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* this is used for the portoflio page */
+.itemBox {
+    float: left;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 8px;
+    border: 2px solid #4aaaa5;
+}
+
+.titleBox{
+    background-color: #1d1616;
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    bottom: 40px;
+    left: -2px;
+    padding-bottom: 10px;
+    border: 2px solid #4aaaa5;
+}
+
+
+/* the whole max-content setting for the width attribute was a life saver, i couldnt figure out how to get the text centered with them all being a different length */
+.itemTitle {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    color: #4aaaa5;
+    font-size: 16px;
+}
+
+.inputForm {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+.regInput{
+    width: 200px;
+}
+
+.bigInput {
+    width: 600px;
+    padding-bottom: 80px;
+    text-overflow: clip;
+}
+
+.formButton {
+    width: 80px;
+    height: 40px;
+    margin-top: 15px;
+    color: #4aaaa5;
+    background-color: #1d1616;
+    border: 2px solid #4aaaa5;
+}
+
+/* ID used to position and style the profile picture in index.html */
+#profilePic {
+    margin-left: 10px;
+    float: left;
+    border: 2px solid #4aaaa5;
+}
+
+.mainText {
+    color: #4aaaa5;
+    margin-right: 10px;
+    padding-left: 300px;
+    padding-right: 10px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+/* style pertains specifically to the box in the center of the screen */
+.contentArea {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #1d1616;
+    width: 960px;
+    border: 2px solid #4aaaa5;
+    flex: 1 0 auto;
+}
+
+/* style pertains specifically to the content area of 960px within the header */
+.contentAreaHeader {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    background-color: #1d1616;
+    width: 960px;
+    /* flex: 1 0 auto; */
+}
+
+/* used as a cool blue line between h2 and content */
+.linedevider {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 800px;
+    height: 2px;
+    background-color: #4aaaa5;
+}
+
+ul {
+    float: right;
+}
+
+li {
+    display: inline;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    color: #4aaaa5;
+    background-color: #1d1616;
+    border: 2px solid #4aaaa5;
+}
+
+/* everything below styles the footer, making it sticky, as well as centering the content on it */
+footer {
+    border-top: 8px solid #4aaaa5;
+    background-color: #1d1616;
+    height: 50px;
+    flex-shrink: 0;
+    margin-top: 10px;
+}
+
+#footerText {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    font-weight: bold;
+    width: max-content;
+    height: 15px;
+    color: #4aaaa5;
+}

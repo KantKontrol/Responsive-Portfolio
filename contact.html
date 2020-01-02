@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+    <title>Contact</title>
+
+    <meta charset="UTF-8">
+    <!-- links css to web page -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- header bar spans webpage, with div to contain content that sits within the 960px width in center -->
+    <header>
+        <div class="contentAreaHeader">
+            <div id="nameBox"><h1>Nicholas DeRissio</h1></div>
+            <!-- <h1>Nicholas DeRissio</h1> -->
+
+            <!-- buttons used for navigating the webpage -->
+            <ul>
+                <li><button id="about" class="nav" onclick="toAbout()">About</button></li>
+                <li><button id="contact" class="nav" onclick="toContact()">Contact</button></li>
+                <li><button id="portfolio" class="nav" onclick="toPortfolio()">Portfolio</button></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- main content area of page contains information or objects for user interactivity -->
+    <section class="contentArea">
+
+        <h2>Contact</h2>
+
+        <div class="linedevider"></div>
+
+        <!-- used this form and input tag layout from this source: https://www.w3schools.com/tags/tag_input.asp -->
+        <form class="inputForm">
+
+
+            <h3>Name</h3>
+            <input class="regInput" type="text" name="name"><br>
+            <h3>Email</h3>
+            <input class="regInput" type="text" name="email"><br>
+            <h3>Message</h3>
+            <textarea name="msg" rows="10" cols="80">Input message here</textarea>
+
+            <button id="f1" class="formButton">Submit</button>
+        </form>
+    </section>
+
+    <!-- footer of web page 'sticky' -->
+    <footer>
+        <div id="footerText">Made By Nicholas DeRissio</div>
+    </footer>
+
+    <!-- links js to webpage -->
+    <script src="js/magic.js"></script>
+</body>
+
+</html>
