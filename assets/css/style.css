@@ -135,7 +135,7 @@ p {
 }
 
 .bigInput {
-    width: 600px;
+    width: 80%;
     padding-bottom: 80px;
     text-overflow: clip;
 }
@@ -176,6 +176,7 @@ p {
     width: 960px;
     border: 2px solid #4aaaa5;
     flex: 1 0 auto;
+    padding: 10px;
 }
 
 /* style pertains specifically to the content area of 960px within the header */
