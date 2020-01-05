@@ -11,7 +11,7 @@ body {
     background-image: url('../images/prism.png');
     margin: 0px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 .navbarColor {
@@ -175,7 +175,6 @@ p {
     margin-top: 50px;
     margin-bottom: 50px;
     background-color: #1d1616;
-    /* width: 960px; */
     border: 2px solid #4aaaa5;
     flex: 1 0 auto; 
     padding: 10px;
@@ -219,12 +218,22 @@ button {
 }
 
 /* everything below styles the footer */
- footer {
+footer {
     border-top: 8px solid #4aaaa5;
     background-color: #1d1616;
-} 
+    height: 50px;
+    flex-shrink: 0;
+    margin-top: auto;
+}
 
-.ftColor {
-    color: #4aaaa5;
+#footerText {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
     font-weight: bold;
+    width: max-content;
+    height: 15px;
+    color: #4aaaa5;
 }
