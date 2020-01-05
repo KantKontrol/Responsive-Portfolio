@@ -123,21 +123,6 @@ p {
     font-size: 16px;
 }
 
-.inputForm {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-}
-
-.regInput{
-    width: 200px;
-}
-
-.bigInput {
-    width: 80%;
-}
-
 .txtColor {
     color: #4aaaa5;
 }
