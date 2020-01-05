@@ -136,8 +136,10 @@ p {
 
 .bigInput {
     width: 80%;
-    padding-bottom: 80px;
-    text-overflow: clip;
+}
+
+.txtColor {
+    color: #4aaaa5;
 }
 
 .formButton {
