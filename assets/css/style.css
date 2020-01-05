@@ -90,39 +90,6 @@ p {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-/* this is used for the portoflio page */
-.itemBox {
-    float: left;
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 8px;
-    border: 2px solid #4aaaa5;
-}
-
-.titleBox{
-    background-color: #1d1616;
-    width: 300px;
-    height: 40px;
-    position: absolute;
-    bottom: 40px;
-    left: -2px;
-    padding-bottom: 10px;
-    border: 2px solid #4aaaa5;
-}
-
-
-/* the whole max-content setting for the width attribute was a life saver, i couldnt figure out how to get the text centered with them all being a different length */
-.itemTitle {
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: max-content;
-    color: #4aaaa5;
-    font-size: 16px;
-}
-
 .txtColor {
     color: #4aaaa5;
 }
@@ -186,13 +153,6 @@ p {
     background-color: #4aaaa5;
 }
 
-ul {
-    float: right;
-}
-
-li {
-    display: inline;
-}
 
 button {
     width: 100px;
