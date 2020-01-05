@@ -5,6 +5,7 @@ html, body {
 }
 
 
+
 /*sets background image, gets rid of space on edges of screen, uses flex for the sticky footer*/
 body {
     background-image: url('../images/prism.png');
@@ -13,11 +14,22 @@ body {
     flex-direction: column;
 }
 
+.navbarColor {
+
+    background-color: #1d1616;
+    border-bottom: 2px solid #4aaaa5; 
+
+}
+
+a {
+    color: #4aaaa5;
+}
+
 /*sets color, pushes content up, adds border, sets the height or thickness as percieved, makes the bar relative to window*/
 header {
     background-color: #1d1616;
     padding-bottom: 10px;
-    border-bottom: 2px solid #4aaaa5; 
+   
     height: 50px;
     position: relative;
     z-index:0;
@@ -162,7 +174,7 @@ p {
 }
 
 /* style pertains specifically to the content area of 960px within the header */
-.contentAreaHeader {
+ .contentAreaHeader {
     display:block;
     margin-left: auto;
     margin-right: auto;
@@ -178,7 +190,6 @@ p {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
-    width: 800px;
     height: 2px;
     background-color: #4aaaa5;
 }
@@ -199,23 +210,13 @@ button {
     border: 2px solid #4aaaa5;
 }
 
-/* everything below styles the footer, making it sticky, as well as centering the content on it */
-footer {
+/* everything below styles the footer */
+ footer {
     border-top: 8px solid #4aaaa5;
     background-color: #1d1616;
-    height: 50px;
-    flex-shrink: 0;
-    margin-top: 10px;
-}
+} 
 
-#footerText {
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    font-weight: bold;
-    width: max-content;
-    height: 15px;
+.ftColor {
     color: #4aaaa5;
+    font-weight: bold;
 }
