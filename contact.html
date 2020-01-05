@@ -37,39 +37,60 @@
         </div>
       </nav>
 
+    <div class="container">
 
-    <!-- main content area of page contains information or objects for user interactivity -->
-    <section class="contentArea">
+        <div class="row">
 
-        <h2>Contact</h2>
+        </div>
 
-        <div class="linedevider"></div>
+        <div class="row">
+            
 
-        <!-- used this form and input tag layout from this source: https://www.w3schools.com/tags/tag_input.asp -->
-        <form class="inputForm">
+            <div class="col sm-1">
+            
+            </div>
+    
+            <div class="col sm-10 contentArea">
+                <h2>Contact</h2>
 
+                <div class="linedevider"></div>
+        
+                <!-- used this form and input tag layout from this source: https://www.w3schools.com/tags/tag_input.asp -->
+                <form class="inputForm">
+        
+        
+                    <h3>Name</h3>
+                    <input class="regInput" type="text" name="name"><br>
+                    <h3>Email</h3>
+                    <input class="regInput" type="text" name="email"><br>
+                    <h3>Message</h3>
+                    <textarea name="msg" rows="10" cols="80">Input message here</textarea>
+        
+                    <button id="f1" class="formButton">Submit</button>
+                </form>
+            </div>
+    
+            <div class="col sm-1">
+    
+            </div>
+        
+        </div>
 
-            <h3>Name</h3>
-            <input class="regInput" type="text" name="name"><br>
-            <h3>Email</h3>
-            <input class="regInput" type="text" name="email"><br>
-            <h3>Message</h3>
-            <textarea name="msg" rows="10" cols="80">Input message here</textarea>
-
-            <button id="f1" class="formButton">Submit</button>
-        </form>
-    </section>
+    </div>
 
     <!-- footer of web page 'sticky' -->
-    <footer>
-        <div id="footerText">Made By Nicholas DeRissio</div>
+    
+    <footer class="page-footer fixed-bottom ftColor">
+        <div class="footer-copyright text-center py-3">Made By Nicholas DeRissio</div>
     </footer>
+    
 
-    <!-- links js to webpage -->
+    
     <!-- links js to webpage -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/magic.js"></script>
 </body>
 
 </html>
