@@ -151,6 +151,19 @@ button {
     border: 2px solid #4aaaa5;
 }
 
+.linkBox{
+    width: 100px;
+    height: 30px;
+    color: #4aaaa5;
+    background-color: #1d1616;
+    border: 2px solid #4aaaa5;
+    padding: 4px;
+}
+
+.card-body{
+    border-top: 2px solid #4aaaa5;
+}
+
 
 .cardDress {
     background-image: url('../images/prism.png');
